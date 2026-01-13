@@ -2,7 +2,7 @@ export default function loadHome() {
   const content = document.getElementById("content");
 
   const section = document.createElement("section");
-  section.classList.add("page");
+  section.classList.add("page", "hero");
 
   const heading = document.createElement("h1");
   heading.textContent = "Welcome to Truffoni's";

@@ -9,11 +9,12 @@ body {
 }
 
 .nav {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  background: #111827;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+padding: 1.5rem;
+background: #111827;
 }
 
 button {
@@ -25,6 +26,11 @@ button {
   font-size: 1rem;
   border-radius: 10px;
   margin: 10px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
 }
 
 
@@ -56,4 +62,45 @@ width: 100%;
 max-width: 500px;
 border-radius: 12px;
 object-fit: cover;
+}
+
+.menu-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 1.5rem;
+margin-top: 1.5rem;
+}
+
+.menu-card {
+background: #f9fafb;
+padding: 1.5rem;
+border-radius: 10px;
+box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+}
+
+
+.contact-info {
+margin-top: 1rem;
+line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+.menu-grid {
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+}
+
+
+.menu-card {
+background: #f9fafb;
+padding: 1.5rem;
+border-radius: 10px;
+box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+}
+
+
+.contact-info {
+margin-top: 1rem;
+line-height: 1.8;
 }

@@ -7,19 +7,21 @@ section.classList.add('page');
 
 
 const heading = document.createElement('h1');
-heading.textContent = 'Contact Us';
+heading.textContent = 'Visit Us';
 
 
-const phone = document.createElement('p');
-phone.textContent = '📞 555‑123‑4567';
+const info = document.createElement('div');
+info.classList.add('contact-info');
 
 
-const address = document.createElement('p');
-address.textContent = '🏠 123 ITYSL, Valhalla';
+info.innerHTML = `
+<p><strong>📍 Address:</strong> 123 ITYSL, Valhalla</p>
+<p><strong>📞 Phone:</strong> 555-123-4567</p>
+<p><strong>⏰ Hours:</strong> Mon–Sun, 11am – 10pm</p>
+`;
 
 
 section.appendChild(heading);
-section.appendChild(phone);
-section.appendChild(address);
+section.appendChild(info);
 content.appendChild(section);
 }
