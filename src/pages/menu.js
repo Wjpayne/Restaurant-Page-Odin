@@ -1,10 +1,27 @@
 export default function loadMenu() {
-  const content = document.getElementById('content');
-  const section = document.createElement('div');
+const content = document.getElementById('content');
 
-  const heading = document.createElement('h2');
-  heading.textContent = "Our Menu";
 
-  section.appendChild(heading);
-  content.appendChild(section);
+const section = document.createElement('section');
+section.classList.add('page');
+
+
+const heading = document.createElement('h1');
+heading.textContent = 'Menu';
+
+
+const items = ['Pizza', 'Burger', 'Pasta'];
+
+
+const list = document.createElement('ul');
+items.forEach(item => {
+const li = document.createElement('li');
+li.textContent = item;
+list.appendChild(li);
+});
+
+
+section.appendChild(heading);
+section.appendChild(list);
+content.appendChild(section);
 }

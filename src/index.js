@@ -9,6 +9,15 @@ function clearContent() {
   content.textContent = "";
 }
 
+function setNavEvents() {
+document.getElementById('home-btn').addEventListener('click', () => {
+clearContent();
+loadHome();
+});
+}
+
+
+
 document.getElementById('home-btn').addEventListener('click', () => {
   clearContent();
   loadHome();
@@ -25,5 +34,6 @@ document.getElementById('contact-btn').addEventListener('click', () => {
 });
 
 // initial load
+setNavEvents();
 loadHome();
 
