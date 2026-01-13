@@ -1,3 +1,5 @@
+import sloppySteakImage from "../assets/Sloppy-Steak.jpg";
+
 export default function loadHome() {
   const content = document.getElementById("content");
 
@@ -8,7 +10,7 @@ export default function loadHome() {
   heading.textContent = "Welcome to Truffoni's";
 
   const image = document.createElement("img");
-  image.src = "https://cdn.nerdist.com/wp-content/uploads/2021/07/12215601/Sloppy-Steaks-Binging-With-Babish.jpg";
+  image.src = sloppySteakImage;
   image.alt = "Restaurant hero image";
   image.classList.add("hero-image");
 
