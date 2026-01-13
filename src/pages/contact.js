@@ -15,7 +15,7 @@ phone.textContent = '📞 555‑123‑4567';
 
 
 const address = document.createElement('p');
-address.textContent = '🏠 123 Odin Street, Valhalla';
+address.textContent = '🏠 123 ITYSL, Valhalla';
 
 
 section.appendChild(heading);
